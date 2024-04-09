@@ -1,6 +1,5 @@
 package academy.devdojo.maratonajava.introducao;
 
-import java.util.Iterator;
 
 public class Aula06EstruturasDeRepeticao04 {
 
