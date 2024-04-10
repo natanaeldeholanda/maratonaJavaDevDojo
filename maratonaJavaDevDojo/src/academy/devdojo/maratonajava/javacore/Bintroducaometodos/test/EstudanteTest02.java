@@ -3,6 +3,8 @@ package academy.devdojo.maratonajava.javacore.Bintroducaometodos.test;
 import academy.devdojo.maratonajava.javacore.Bintroducaometodos.dominio.Estudante;
 
 public class EstudanteTest02 {
+	
+	
 
 	public static void main(String[] args) {
 
@@ -20,7 +22,6 @@ public class EstudanteTest02 {
 		estudante01.imprime();
 		estudante02.imprime();
 		
-	
 		
 	}
 
