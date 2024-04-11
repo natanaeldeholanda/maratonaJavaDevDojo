@@ -6,11 +6,11 @@ public class CalculadoraTest03 {
 
 	public static void main(String[] args) {
 		Calculadora calculadora = new Calculadora ();
-		double resultado = calculadora.divideDoisNumeros(6, 0);
+		double resultado = calculadora.divideDoisNumeros(6, 2);
 		System.out.println(resultado);
 		System.out.println("---------------------------------");
 		
-		calculadora.imprimeDivisaoDoisNumeros(86, 0);
+		calculadora.imprimeDivisaoDoisNumeros(86, 1);
 	}
 
 }

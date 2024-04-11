@@ -1,10 +1,10 @@
 package academy.devdojo.maratonajava.javacore.Bintroducaometodos.test;
 
 import academy.devdojo.maratonajava.javacore.Bintroducaometodos.dominio.Estudante;
-import academy.devdojo.maratonajava.javacore.Bintroducaometodos.dominio.ImpressoraEstudante;
+import academy.devdojo.maratonajava.javacore.Bintroducaometodos.dominio.ImpressoraEstudante; // Import da classe ImpressoraEstudante
 
 
-public class EstudanteTeste01 {
+public class EstudanteTest01 {
 
 	public static void main(String[] args) {
 		Estudante estudante01 = new Estudante();
@@ -22,10 +22,10 @@ public class EstudanteTeste01 {
 		impressora.imprime(estudante01);
 		impressora.imprime(estudante02);
 		
-		System.out.println("**********************");
-		
+		//CLASSE ImpressoraEstudante		
 		impressora.imprime(estudante01);
 		impressora.imprime(estudante02);
+		
 		
 
 	}

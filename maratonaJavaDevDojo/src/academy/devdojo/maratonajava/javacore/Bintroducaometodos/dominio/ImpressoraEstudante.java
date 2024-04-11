@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.Bintroducaometodos.dominio;
+package academy.devdojo.maratonajava.javacore.Bintroducaometodos.dominio; 
 
 public class ImpressoraEstudante {
 	
