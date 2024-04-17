@@ -1,15 +1,23 @@
 package academy.devdojo.maratonajava.javacore.Jmodificadorfinal.test;
 
 import academy.devdojo.maratonajava.javacore.Jmodificadorfinal.dominio.Carro;
+import academy.devdojo.maratonajava.javacore.Jmodificadorfinal.dominio.Comprador;
+import academy.devdojo.maratonajava.javacore.Jmodificadorfinal.dominio.Ferrari;
 
 public class CarroTest01 {
 
-	public static void main(String[] args) {
-		
-		Carro carro = new Carro();
-		carro.setNome("C3");
-		System.out.println(Carro.VELOCIDADE_LIMITE);
+    public static void main(String[] args) {
 
-	} 
+        Carro carro = new Carro();
+        Comprador comprador2 = new Comprador();
+        Ferrari ferrari = new Ferrari();
+        System.out.println(Carro.VELOCIDADE_LIMITE);
+        System.out.println(carro.COMPRADOR);
+        carro.COMPRADOR.setNome("Kuririm");
+        System.out.println(carro.COMPRADOR);
+        ferrari.setNome("Enzo");
+        ferrari.imprime();
+
+    }
 
 }

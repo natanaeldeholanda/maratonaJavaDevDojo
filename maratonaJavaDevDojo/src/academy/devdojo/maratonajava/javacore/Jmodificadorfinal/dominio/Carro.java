@@ -4,16 +4,18 @@ public class Carro {
 	
 	private String nome;
 	//Para declarar uma constante, ou seja final, declarar tudo maiusculo e o espaco ser o undercore _ .
-	public static final double VELOCIDADE_LIMITE = 280;
-	
+	public static final double VELOCIDADE_LIMITE = 250;
+	public final Comprador COMPRADOR = new Comprador();
+
+	public final void imprime(){
+		System.out.println(this.nome);
+	}
+
 	public String getNome() {
 		return nome;
 	}
-	
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
 	
-	
-
-}
+	}
