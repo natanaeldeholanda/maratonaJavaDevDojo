@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.Npolimorfismo.Test;
+package academy.devdojo.maratonajava.javacore.Npolimorfismo.test;
 
 import academy.devdojo.maratonajava.javacore.Npolimorfismo.dominio.Computador;
 import academy.devdojo.maratonajava.javacore.Npolimorfismo.dominio.Produto;
