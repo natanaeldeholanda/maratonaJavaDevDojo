@@ -1,6 +1,6 @@
 package academy.devdojo.maratonajava.javacore.Npolimorfismo.test;
 
-import academy.devdojo.maratonajava.javacore.Npolimorfismo.Notebook;
+import academy.devdojo.maratonajava.javacore.Npolimorfismo.dominio.Notebook;
 import academy.devdojo.maratonajava.javacore.Npolimorfismo.dominio.Computador;
 import academy.devdojo.maratonajava.javacore.Npolimorfismo.dominio.Televisao;
 import academy.devdojo.maratonajava.javacore.Npolimorfismo.dominio.Tomate;
@@ -20,6 +20,7 @@ public class ProdutoTest01 {
         CalculadoraImposto.calcularImposto(tv);
         System.out.println("---------------------------");
         CalculadoraImposto.calcularImposto(notebook);
+
 
     }
 }

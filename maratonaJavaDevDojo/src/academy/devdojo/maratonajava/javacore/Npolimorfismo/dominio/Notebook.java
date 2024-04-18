@@ -1,6 +1,4 @@
-package academy.devdojo.maratonajava.javacore.Npolimorfismo;
-
-import academy.devdojo.maratonajava.javacore.Npolimorfismo.dominio.Produto;
+package academy.devdojo.maratonajava.javacore.Npolimorfismo.dominio;
 
 public class Notebook extends Produto {
 
