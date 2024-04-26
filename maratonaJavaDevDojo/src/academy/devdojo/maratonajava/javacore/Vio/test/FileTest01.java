@@ -9,7 +9,6 @@ public class FileTest01 {
     public static void main(String[] args) {
         File file = new File("file.txt");
         try {
-
             boolean isCreated = file.createNewFile();
             System.out.println("Arquivo criado com sucesso = " + isCreated);
             System.out.println("Path " + file.getPath());
