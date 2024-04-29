@@ -7,14 +7,16 @@ import java.io.IOException;
 
 public class BufferedWriterTest01 {
     public static void main(String[] args) {
+
         File file = new File("file.txt");
-        try (FileWriter fileWriter = new FileWriter(file, true);
-             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter) {
-            bufferedWriter.write("Escrevendo no file\n");
-            burreredWriter.newLine();
-            bufferedWriter.flush();
-             } catch(IOException e) {
-            e.printStackTrace();
+        try (FileWriter fw = new FileWriter(file, true);
+             BufferedWriter bw = new BufferedWriter(fw)) {
+            bw.write("Escrevendo no arquivo");
+            bw.newLine();
+            bw.flush();
+        } catch (IOException ex) {
+            ex.printStackTrace();
         }
     }
 }
+

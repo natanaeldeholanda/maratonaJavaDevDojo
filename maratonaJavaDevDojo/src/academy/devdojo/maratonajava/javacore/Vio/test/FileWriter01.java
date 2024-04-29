@@ -8,10 +8,10 @@ public class FileWriter01 {
     public static void main(String[] args) {
         File file = new File("file.txt");
         try (FileWriter fileWriter = new FileWriter(file, true)) {
-            fileWriter.write("Escrevendo no file\n");
+            fileWriter.write("Escrevendo no file\nContinuando a cantoria na próxima linha");
             fileWriter.flush();
-        } catch (IOException e) {
-            e.printStackTrace();
+        } catch (IOException ex) {
+            ex.printStackTrace();
         }
     }
 }

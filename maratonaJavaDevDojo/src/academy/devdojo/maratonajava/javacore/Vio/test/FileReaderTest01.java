@@ -8,13 +8,13 @@ public class FileReaderTest01 {
     public static void main(String[] args) {
         File file = new File("file.txt");
         try (FileReader fileReader = new FileReader(file)) {
-//            char [] in = new char[18];
+//            char [] in = new char[50];
 //            fileReader.read(in);
 //            for(char c : in) {
 //                System.out.print(c);
 //            }
 
-            //Código para ler o texto no arquivo file.txt
+           // Código while para ler o texto no arquivo file.txt
             int i = 0;
             while ((i = fileReader.read()) != -1) {
                 System.out.print((char) i);
