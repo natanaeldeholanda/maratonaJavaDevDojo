@@ -1,11 +1,15 @@
 package academy.devdojo.maratonajava.javacore.Xserializacao.dominio;
 
-import java.io.Serializable;
+import java.io.*;
 
 public class Aluno implements Serializable {
+    @Serial
+    private static final long serialVersionUID = 739949230178355185L;
     private Long id;
     private String nome;
-    private String password;
+    private transient String password;
+    private static final String NOME_ESCOLA = "DevDojo Virado no Jiraya";
+    private transient Turma turma;
 
     @Override
     public String toString() {
@@ -13,7 +17,31 @@ public class Aluno implements Serializable {
                 "id=" + id +
                 ", nome='" + nome + '\'' +
                 ", password='" + password + '\'' +
+                ", nome escola='" + NOME_ESCOLA + '\'' +
+                ", turma='" + turma + '\'' +
                 '}';
+    }
+
+    @Serial
+    private void writeObject(ObjectOutputStream oss) throws IOException {
+        try {
+            oss.defaultWriteObject();
+            oss.writeUTF(turma.getNome());
+        } catch (IOException e){
+            e.printStackTrace();
+        }
+    }
+
+    @Serial
+    private void readObject(ObjectInputStream ois) throws IOException {
+        try {
+            ois.defaultReadObject();
+            String nomeTurma = ois.readUTF();
+            turma = new Turma(nomeTurma);
+
+        } catch (IOException | ClassNotFoundException e){
+            e.printStackTrace();
+        }
     }
 
     public Aluno(Long id, String nome, String password) {
@@ -44,6 +72,14 @@ public class Aluno implements Serializable {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public Turma getTurma() {
+        return turma;
+    }
+
+    public void setTurma(Turma turma) {
+        this.turma = turma;
     }
 }
 
