@@ -5,7 +5,7 @@ import java.util.List;
 
 public class ListTest01 {
     public static void main(String[] args) {
-        List<String> nomes = new ArrayList<>(16);
+        List<String> nomes = new ArrayList<>(16); // Capacidade inicial definida, porém a mesma vai acrescentando multiplicado pelo valor setado;
         List<String> nomes2 = new ArrayList<>(16);
         nomes.add("Pedro");
         nomes.add("Maria");
@@ -20,12 +20,11 @@ public class ListTest01 {
         for (String nome : nomes) {
             System.out.println(nome);
         }
-        System.out.println("----------------");
         int size = nomes.size();
-        for(int i = 0; i < size; i++){
-            nomes.add("Adicionando antes do for indexado");
+        for (int i = 0; i < size; i++) {
             System.out.println(nomes.get(i));
         }
+        nomes.add("Adicionando antes do for indexado");
         System.out.println(nomes);
     }
 }
