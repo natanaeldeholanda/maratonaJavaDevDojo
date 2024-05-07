@@ -6,7 +6,7 @@ import java.util.List;
 public class ListTest01 {
     public static void main(String[] args) {
         List<String> nomes = new ArrayList<>(16); // Capacidade inicial definida, porém a mesma vai acrescentando multiplicado pelo valor setado;
-        List<String> nomes2 = new ArrayList<>(16);
+        List<String> nomes2 = new ArrayList<>(32);
         nomes.add("Pedro");
         nomes.add("Maria");
         nomes.add("Natanael");
