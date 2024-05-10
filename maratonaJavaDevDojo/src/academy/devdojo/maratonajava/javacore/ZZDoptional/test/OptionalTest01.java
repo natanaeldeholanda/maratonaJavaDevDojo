@@ -15,9 +15,9 @@ public class OptionalTest01 {
         System.out.println("------------------");
         Optional<String> nameOptional = ((findName("Natanael de Holanda")));
         String empty = nameOptional.orElse("EMPTY");
-        nameOptional.ifPresent(s -> System.out.println(s.toUpperCase()));
         System.out.println(nameOptional);
         System.out.println(empty);
+        nameOptional.ifPresent(s -> System.out.println(s.toUpperCase()));
 
     }
 
