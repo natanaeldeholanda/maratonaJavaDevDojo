@@ -19,7 +19,7 @@ public class StoreServiceWithDiscount {
 
     public String applyDiscount(Quote quote) {
         delay();
-        double discountValue = quote.getPrice() * (100 - quote.getDiscountCode().getPercentage() / 100);
+        double discountValue = quote.getPrice() * (100 - quote.getDiscountCode().getPercentage()) / 100;
         return String.format("'%s' original price: '%.2f'. Applying discount code '%s'. Final price '%.2f'.",
                 quote.getStore(),
                 quote.getPrice(),
@@ -38,7 +38,8 @@ public class StoreServiceWithDiscount {
 
     private void delay() {
         try {
-            TimeUnit.SECONDS.sleep(1);
+            int milli = ThreadLocalRandom.current().nextInt(200, 1500);
+            TimeUnit.MILLISECONDS.sleep(milli);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

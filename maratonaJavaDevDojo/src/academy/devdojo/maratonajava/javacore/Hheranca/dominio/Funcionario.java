@@ -22,7 +22,7 @@ public class Funcionario extends Pessoa {
 		System.out.println("Bloco de inicialização não estático de funcionario 2");
 	}
 	
-	// Sobrescrevendo o método da classe Pessoa -> (Tem que ser o mesmo nome do
+	// Sobrescrevendo o método da classe Person -> (Tem que ser o mesmo nome do
 	// método) <-, ou seja, pegando também o método
 	// imprime, adicionando o super, pra imprimir o salaário.
 	public void imprime() {
